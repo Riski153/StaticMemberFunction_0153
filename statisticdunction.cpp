@@ -19,4 +19,8 @@ class Mahasiswa {
         static int getNIM(){
             return nim;
         }
+
+        Mahasiswa(string pnama) :nama(pnama){
+            setID();
+        }
 };
