@@ -33,4 +33,11 @@ class Kendaraan {
         idKendaraan = id;
         namaKendaraan = nama;
     }
+
+        // Method untuk menampilkan data kendaraan
+    void tampilkanData() {
+        cout << "ID Kendaraan   : " << idKendaraan << endl;
+        cout << "Nama Kendaraan : " << namaKendaraan << endl;
+        cout << endl;
+    }
 };
