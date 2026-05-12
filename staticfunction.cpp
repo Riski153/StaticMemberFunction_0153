@@ -1,62 +1,75 @@
 #include <iostream>
 #include <string>
+
 using namespace std;
 
 class Mahasiswa {
-    private:
-        static int nim;
-    public:
-        int id;
-        string nama;
 
-        void setID();
-        void printALL();
+private:
+    static int nim;
 
-        static void setNIM(int pnim){
-            nim = pnim;
-        };
+public:
+    int id;
+    string nama;
 
-        static int getNIM(){
-            return nim;
-        }
+    // static function untuk mengubah nilai nim
+    static void setNIM(int pnim) {
+        nim = pnim;
+    }
 
-        Mahasiswa(string pnama) :nama(pnama){
-            setID();
-        }
+    // static function untuk mengambil nilai nim
+    static int getNIM() {
+        return nim;
+    }
+
+    // deklarasi method
+    void setID();
+    void printAll();
+
+    // constructor
+    Mahasiswa(string pnama) : nama(pnama) {
+        setID();
+    }
 };
 
+// inisialisasi variabel static
 int Mahasiswa::nim = 0;
 
-void Mahasiswa::setID(){
+// implementasi method setID
+void Mahasiswa::setID() {
     id = ++nim;
 }
 
-void Mahasiswa::printALL(){
+// implementasi method printAll
+void Mahasiswa::printAll() {
+
     cout << "ID = " << id << endl;
     cout << "Nama = " << nama << endl;
     cout << endl;
 }
 
-int main(){
-    //pembuatan object dan pemberian nilai
+int main() {
+
+    // pembuatan object dan pemberian nilai
     Mahasiswa mhs1("Sri Dadi");
     Mahasiswa mhs2("Budi Jatmiko");
 
-    //memberi nilai pada setNim() untuk merubah nilai NIM
-    Mahasiswa::setNim(9);
+    // mengubah nilai NIM
+    Mahasiswa::setNIM(9);
 
     Mahasiswa mhs3("Andi Janu");
     Mahasiswa mhs4("Joko Wahono");
 
-    //memanggil prosedur printAll()
+    // menampilkan data
     mhs1.printAll();
     mhs2.printAll();
     mhs3.printAll();
     mhs4.printAll();
 
-    cout << "Akses dari luar object = " << Mahasiswa::getNIM() <<endl;
+    // mengambil nilai static dari luar object
+    cout << "Akses dari luar object = "
+         << Mahasiswa::getNIM() << endl;
+
     system("pause");
-
-
     return 0;
 }
