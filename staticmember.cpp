@@ -13,5 +13,10 @@ class Mahasiswa {
     Mahasiswa(string pnama) : nama(pnama) {
         setID();
     }
-
 };
+
+    int Mahasiswa::nim = 10;
+
+    void Mahasiswa::setID(){
+        id = ++nim;
+    };
