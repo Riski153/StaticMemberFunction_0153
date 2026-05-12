@@ -10,4 +10,7 @@ class Mahasiswa {
     void setID();
     void printALL();
 
+    Mahasiswa(string pnama) : nama(pnama) {
+        setID();
+
 };
