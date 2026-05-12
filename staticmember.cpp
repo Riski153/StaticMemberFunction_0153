@@ -20,3 +20,7 @@ class Mahasiswa {
     void Mahasiswa::setID(){
         id = ++nim;
     };
+
+void Mahasiswa::printALL(){
+    
+}
