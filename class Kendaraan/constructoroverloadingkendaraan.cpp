@@ -16,4 +16,9 @@ class Kendaraan {
         namaKendaraan = "Default";
     }
 
+      // Constructor dengan parameter id
+    Kendaraan(int id) {
+        idKendaraan = id;
+        namaKendaraan = "Belum Ada Nama";
+    }
 };
