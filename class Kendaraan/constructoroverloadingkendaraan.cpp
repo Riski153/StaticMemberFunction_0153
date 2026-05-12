@@ -62,4 +62,5 @@ int main() {
     cout << "Data Kendaraan 4" << endl;
     k4.tampilkanData();
 
+    return 0;
 };
