@@ -11,4 +11,8 @@ class Mahasiswa {
 
         void setID();
         void printALL();
+
+        static void setNIM(int pnim){
+            nim = pnim;
+        }
 };
