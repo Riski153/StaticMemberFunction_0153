@@ -38,5 +38,21 @@ void Mahasiswa::printALL(){
 }
 
 int main(){
-    
+    //pembuatan object dan pemberian nilai
+    Mahasiswa mhs1("Sri Dadi");
+    Mahasiswa mhs2("Budi Jatmiko");
+
+    //memberi nilai pada setNim() untuk merubah nilai NIM
+    Mahasiswa::setNim(9);
+
+    Mahasiswa mhs3("Andi Janu");
+    Mahasiswa mhs4("Joko Wahono");
+
+    //memanggil prosedur printAll()
+    mhs1.printAll();
+    mhs2.printAll();
+    mhs3.printAll();
+    mhs4.printAll();
+
+    return 0;
 }
