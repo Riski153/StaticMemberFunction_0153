@@ -42,4 +42,10 @@ class Kendaraan {
     }
 };
 
-int main() {};
+int main() {
+        // Membuat object dengan constructor berbeda
+    Kendaraan k1;
+    Kendaraan k2(101);
+    Kendaraan k3("Toyota Avanza");
+    Kendaraan k4(202, "Honda Civic");
+};
