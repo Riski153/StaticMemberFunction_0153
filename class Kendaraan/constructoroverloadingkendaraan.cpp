@@ -48,4 +48,18 @@ int main() {
     Kendaraan k2(101);
     Kendaraan k3("Toyota Avanza");
     Kendaraan k4(202, "Honda Civic");
+
+     // Menampilkan data kendaraan
+    cout << "Data Kendaraan 1" << endl;
+    k1.tampilkanData();
+
+    cout << "Data Kendaraan 2" << endl;
+    k2.tampilkanData();
+
+    cout << "Data Kendaraan 3" << endl;
+    k3.tampilkanData();
+
+    cout << "Data Kendaraan 4" << endl;
+    k4.tampilkanData();
+
 };
