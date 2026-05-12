@@ -21,4 +21,10 @@ class Kendaraan {
         idKendaraan = id;
         namaKendaraan = "Belum Ada Nama";
     }
+
+      // Constructor dengan parameter nama
+    Kendaraan(string nama) {
+        idKendaraan = 0;
+        namaKendaraan = nama;
+    }
 };
