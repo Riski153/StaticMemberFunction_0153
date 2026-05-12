@@ -12,5 +12,6 @@ class Mahasiswa {
 
     Mahasiswa(string pnama) : nama(pnama) {
         setID();
+    }
 
 };
