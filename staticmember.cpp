@@ -26,3 +26,7 @@ void Mahasiswa::printALL(){
     cout << "Nama : " << nama << endl;
     cout << endl;
 };
+
+int main(){
+    
+}
