@@ -41,3 +41,5 @@ class Kendaraan {
         cout << endl;
     }
 };
+
+int main() {};
