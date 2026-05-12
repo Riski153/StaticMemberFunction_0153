@@ -3,4 +3,8 @@
 
 using namespace std;
 
-class Kendaraan {};
+class Kendaraan {
+    private:
+    int idKendaraan;
+    string namaKendaraan;
+};
