@@ -4,7 +4,7 @@ using namespace std;
 
 class Mahasiswa {
     private:
-        static iint nim;
+        static int nim;
     public:
         int id;
         string nama;
@@ -14,5 +14,9 @@ class Mahasiswa {
 
         static void setNIM(int pnim){
             nim = pnim;
+        };
+
+        static int getNIM(){
+            return nim;
         }
 };
