@@ -27,4 +27,10 @@ class Kendaraan {
         idKendaraan = 0;
         namaKendaraan = nama;
     }
+
+      // Constructor dengan parameter lengkap
+    Kendaraan(int id, string nama) {
+        idKendaraan = id;
+        namaKendaraan = nama;
+    }
 };
