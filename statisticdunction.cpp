@@ -54,5 +54,8 @@ int main(){
     mhs3.printAll();
     mhs4.printAll();
 
+    cout << "Akses dari luar object = " << Mahasiswa::getNIM() <<endl;
+    system("pause");
+
     return 0;
 }
